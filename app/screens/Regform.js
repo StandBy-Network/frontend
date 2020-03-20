@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Keyboard, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View} from 'react-native';
+import {Keyboard, StyleSheet, Text, TextInput, TouchableWithoutFeedback, View} from 'react-native';
 import {Formik} from 'formik';
 import * as yup from 'yup';
 import FlatButton from "../components/Button";
