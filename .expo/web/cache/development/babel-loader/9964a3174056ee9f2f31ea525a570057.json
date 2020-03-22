@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { Providers } from \"./app/routes/Providers\";","map":{"version":3,"sources":["/home/user/Documents/StandByAssist/frontend/App.js"],"names":["Providers"],"mappings":"AAAA,SAASA,SAAT","sourcesContent":["import { Providers} from \"./app/routes/Providers\";\n\n"]},"metadata":{},"sourceType":"module"}
