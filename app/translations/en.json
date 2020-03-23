@@ -41,5 +41,30 @@
         "header": "SIGN UP",
         "success": "Successful sign up :)",
         "text": "You can use it in some seconds... :)"
+    },
+    "ProfileSaved": {
+        "text": "Profile Saved",
+        "button": "Ok"
+    },
+    "RequestSaved": {
+        "text": "Help request saved, sent.",
+        "button": "OK"
+    },
+    "AssistSaved": {
+        "text": "Assistance sent, saved. Thank you! You can now see the name of the person who requested help and chat with him/her.",
+        "button": "OK"
+    },
+    "CreateRequest": {
+        "header": "Help request description",
+        "placeholder": "Ide írhatjuk le, hogy mit szeretnénk: - gyógszer - bevásárlás (jöhet a teljes lista) - kutyasétáltatás - beszélgetés",
+        "tick": "Nyilvános - mindenki segíthet (nem csak az ismerősök)",
+        "button": {
+            "cancel": "Mégse",
+            "ok": "Mehet"
+        },
+        "edit": {
+            "label": "Ismerős, rokon választása, akitől a segítséget kérjük.",
+            "placeholder": "Válasszuk ki az ismerőst, rokont"
+        }
     }
 }

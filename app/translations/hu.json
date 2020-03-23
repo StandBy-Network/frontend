@@ -41,5 +41,30 @@
     "header": "REGISZTRÁCIÓ, FELIRATKOZÁS",
     "success": "Sikeres regisztráció :)",
     "text": "Másodperceken belül használhatod... :)"
+  },
+  "ProfileSaved": {
+    "text": "Profil adatok mentése megtörtént",
+    "button": "Rendben"
+  },
+  "RequestSaved": {
+    "text": "Segítségkérés rögzítve, elküldve",
+    "button": "Rendben"
+  },
+  "AssistSaved": {
+    "text": "Segítségnyújtás rögzítve, elküldve. Köszönjük! Innentől megnézhető a segítségkérő neve és üzenetek válthatók vele.",
+    "button": "Rendben"
+  },
+  "CreateRequest": {
+    "header": "Segítségkérés leírása",
+    "placeholder": "Ide írhatjuk le, hogy mit szeretnénk: - gyógszer - bevásárlás (jöhet a teljes lista) - kutyasétáltatás - beszélgetés",
+    "tick": "Nyilvános - mindenki segíthet (nem csak az ismerősök)",
+    "button": {
+      "cancel": "Mégse",
+      "ok": "Mehet"
+    },
+    "edit": {
+      "label": "Ismerős, rokon választása, akitől a segítséget kérjük.",
+      "placeholder": "Válasszuk ki az ismerőst, rokont"
+    }
   }
 }

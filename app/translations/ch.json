@@ -21,7 +21,7 @@
   },
   "PasswordSent": {
     "text": "密码提醒已发送",
-    "button": "好"
+    "button": "同意"
   },
   "SignUp": {
     "title":"报名",
@@ -41,5 +41,17 @@
     "header": "报名",
     "success": "成功注册 :)",
     "text": "您将可以在几秒钟内使用它... :)"
+  },
+  "ProfileSaved": {
+    "text": "个人资料已保存",
+    "button": "同意"
+  },
+  "RequestSaved": {
+    "text": "请求协助已保存并发送",
+    "button": "同意"
+  },
+  "AssistSaved": {
+    "text": "已发送协助，并保存。 谢谢！ 现在，您可以看到请求协助的者的姓名并与他/她聊天.",
+    "button": "同意"
   }
 }
