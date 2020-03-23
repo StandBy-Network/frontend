@@ -11,7 +11,7 @@ import SignUpScreen from "./app/screens/signUp/SignUpScreen";
 export default function App() {
 
     return (
-            <SignUpSuccessScreen/>
+            <PasswordSentScreen/>
     );
 
 }

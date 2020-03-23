@@ -24,22 +24,22 @@
     "button": "好"
   },
   "SignUp": {
-    "title":"Sign up",
-    "name": "Username",
-    "nameError": "Username can't be empty!",
-    "email": "Email address",
-    "emailError": "Email address can't be empty!",
-    "emailValid": "Please, use valid email address!",
-    "phone": "Phone number",
-    "phoneError": "Phone number can't be empty!",
-    "phoneValid": "Please, use valid phone number!",
-    "zip": "Zip code",
-    "zipError": "Zip code can't be empty",
-    "button": "Go"
+    "title":"报名",
+    "name": "用户名",
+    "nameError": "用户名不能为空白！",
+    "email": "电子邮件地址",
+    "emailError": "电子邮件地址不能为空白！",
+    "emailValid": "请使用有效的电子邮件地址！",
+    "phone": "电话号码",
+    "phoneError": "电话号码不能为空白！",
+    "phoneValid": "请使用有效的电话号码！",
+    "zip": "邮政编码",
+    "zipError": "邮递区号不能为空白",
+    "button": "报名"
   },
   "SignUpSuccess": {
-    "header": "SIGN UP",
-    "success": "Successful sign up :)",
-    "text": "You can use it in some seconds... :)"
+    "header": "报名",
+    "success": "成功注册 :)",
+    "text": "您将可以在几秒钟内使用它... :)"
   }
 }
