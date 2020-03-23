@@ -1,0 +1,45 @@
+{
+    "SignIn": {
+        "header": "Sign in",
+        "username": "Username",
+        "usernameError": "Username is not valid!",
+        "password": "Password",
+        "passwordError": "Password is wrong!",
+        "button": {
+            "signIn": "Sign in",
+            "forgottenPassword": "Forgotten password"
+        }
+    },
+    "ForgotPassword": {
+        "title": "FORGOTTEN PASSWORD",
+        "email": "E-mail address",
+        "emailError": "E-mail address is not valid!",
+        "button": {
+            "go": "Send",
+            "cancel": "Cancel"
+        }
+    },
+    "PasswordSent": {
+        "text": "Password reminder sent",
+        "button": "OK"
+    },
+    "SignUp": {
+        "title":"Sign up",
+        "name": "Username",
+        "nameError": "Username can't be empty!",
+        "email": "Email address",
+        "emailError": "Email address can't be empty!",
+        "emailValid": "Please, use valid email address!",
+        "phone": "Phone number",
+        "phoneError": "Phone number can't be empty!",
+        "phoneValid": "Please, use valid phone number!",
+        "zip": "Zip code",
+        "zipError": "Zip code can't be empty",
+        "button": "Sign Up"
+    },
+    "SignUpSuccess": {
+        "header": "SIGN UP",
+        "success": "Successful sign up :)",
+        "text": "You can use it in some seconds... :)"
+    }
+}

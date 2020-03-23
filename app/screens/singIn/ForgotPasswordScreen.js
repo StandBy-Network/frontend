@@ -5,12 +5,12 @@ import {Formik} from "formik";
 import FlatButton from "../../components/Button";
 import {globalStyles} from "../../styles/globalStyles";
 import {Container} from "../../components/Container";
+import I18t from '../../translations';
 
 const pwSchema = yup.object({
     email: yup.string()
         .email()
-        .required('Nem megfelelő felhasználónév!'),
-
+        .required(I18t.t('ForgotPassword.emailError'))
 });
 
 export const ForgotPasswordScreen = ({ navigation }) => {
@@ -20,7 +20,7 @@ export const ForgotPasswordScreen = ({ navigation }) => {
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View>
                     <View>
-                        <Text style={globalStyles.header}>ELFELEJTETT JELSZÓ</Text>
+                        <Text style={globalStyles.header}>{I18t.t('ForgotPassword.title')}</Text>
                     </View>
                     <View style={globalStyles.form}>
                         <Formik
@@ -33,18 +33,18 @@ export const ForgotPasswordScreen = ({ navigation }) => {
                             {(props) => (
                                 <View>
                                     <TextInput style={globalStyles.textinput}
-                                               placeholder="Email cím"
+                                               placeholder={I18t.t('ForgotPassword.email')}
                                                value={props.values.password}
                                                onChangeText={props.handleChange('email')}
                                                onBlur={props.handleBlur('email')}
                                                underlineColorAndroid={'transparent'} />
                                     <Text style={globalStyles.errorText} >{props.touched.email && props.errors.email}</Text>
                                    <View style={globalStyles.buttonContainer}>
-                                    <FlatButton text="Mégsem" onPress={() => {
+                                    <FlatButton text={I18t.t('ForgotPassword.button.cancel')} onPress={() => {
                                         navigation.navigate('SignIn');
                                     }}
                                                 style={globalStyles.cancelButton} />
-                                    <FlatButton text="Mehet!" onPress={() => {
+                                    <FlatButton text={I18t.t('ForgotPassword.button.go')} onPress={() => {
                                         //props.handleSubmit();
                                         navigation.navigate("PasswordSent");
                                     }} style={globalStyles.actionButton} />

@@ -109,6 +109,13 @@ export const globalStyles = StyleSheet.create({
         borderBottomColor: '#9b9b9b',
         borderBottomWidth: 1
     },
+    textInputRed: {
+        alignSelf: 'stretch',
+        height: 40,
+        marginBottom: 20,
+        borderBottomColor: '#D50000',
+        borderBottomWidth: 1
+    },
     textLink: {
         color: '#D50000',
         fontWeight: 'bold'

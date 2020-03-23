@@ -1,0 +1,45 @@
+{
+  "SignIn": {
+    "header": "登入",
+    "username": "用户名",
+    "usernameError": "用户名无效",
+    "password": "密码",
+    "passwordError": "密码无效",
+    "button": {
+      "signIn": "登入",
+      "forgottenPassword": "忘记密码"
+    }
+  },
+  "ForgotPassword": {
+    "title": "忘记密码",
+    "email": "电子邮件地址",
+    "emailError": "电子邮件地址无效！",
+    "button": {
+      "go": "发送",
+      "cancel": "取消"
+    }
+  },
+  "PasswordSent": {
+    "text": "密码提醒已发送",
+    "button": "好"
+  },
+  "SignUp": {
+    "title":"Sign up",
+    "name": "Username",
+    "nameError": "Username can't be empty!",
+    "email": "Email address",
+    "emailError": "Email address can't be empty!",
+    "emailValid": "Please, use valid email address!",
+    "phone": "Phone number",
+    "phoneError": "Phone number can't be empty!",
+    "phoneValid": "Please, use valid phone number!",
+    "zip": "Zip code",
+    "zipError": "Zip code can't be empty",
+    "button": "Go"
+  },
+  "SignUpSuccess": {
+    "header": "SIGN UP",
+    "success": "Successful sign up :)",
+    "text": "You can use it in some seconds... :)"
+  }
+}

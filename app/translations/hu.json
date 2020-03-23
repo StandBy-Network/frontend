@@ -1,0 +1,45 @@
+{
+  "SignIn": {
+    "header": "BEJELENTKEZÉS",
+    "username": "Felhasználó név",
+    "usernameError": "Nem megfelelő felhasználónév!",
+    "password": "Jelszó",
+    "passwordError": "'Nem megfelelő jelszó!'",
+    "button": {
+      "signIn": "Mehet",
+      "forgottenPassword": "Elfelejtett jelszó"
+    }
+  },
+  "ForgotPassword": {
+    "title": "ELFELEJTETT JELSZÓ",
+    "email": "E-mail cím",
+    "emailError": "Nem megfelelő e-mail cím!",
+    "button": {
+      "go": "Mehet",
+      "cancel": "Mégse"
+    }
+  },
+  "PasswordSent": {
+    "text": "Jelszóemlékeztető elküldve",
+    "button": "Rendben"
+  },
+  "SignUp": {
+    "title":"REGISZTRÁCIÓ, FELIRATKOZÁS",
+    "name": "Felhasználónév",
+    "nameError": "Név megadása kötelező!",
+    "email": "E-mail cím",
+    "emailError": "E-mail cím megadása kötelező!",
+    "emailValid": "Kérem, helyes emailcímet adjon meg!",
+    "phone": "Telefonszám",
+    "phoneError": "Telefonszám megadása kötelező!",
+    "phoneValid": "Kérem, helyes telefonszámot adjon meg!",
+    "zip": "Irányítószám",
+    "zipError": "Irányítószám megadása kötelező!",
+    "button": "Mehet"
+  },
+  "SignUpSuccess": {
+    "header": "REGISZTRÁCIÓ, FELIRATKOZÁS",
+    "success": "Sikeres regisztráció :)",
+    "text": "Másodperceken belül használhatod... :)"
+  }
+}
