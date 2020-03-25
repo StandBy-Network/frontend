@@ -1,5 +1,5 @@
 import React from 'react';
-import {Keyboard, Text, TextInput, TouchableWithoutFeedback, View} from 'react-native';
+import {CheckBox, Keyboard, Text, TextInput, TouchableWithoutFeedback, View} from 'react-native';
 import * as yup from "yup";
 import I18t from "../../../translations";
 import {Container} from "../../../components/Container";
@@ -9,17 +9,17 @@ import FlatButton from "../../../components/Button";
 
 const requestSchema = yup.object({
     request: yup.string()
-        .required(I18t.t('SignUp.phoneError'))
+        .required(I18t.t('CreateRequest.requestError'))
 });
 
-export const CreateRequestScreen = () => {
+export const CreateRequestScreen = ({ navigation }) => {
 
     return (
-        <Container>
+        <Container title={I18t.t('CreateRequest.menuTitle')}>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View>
                     <View>
-                        <Text style={globalStyles.header}>{I18t.t('SignUp.title')}</Text>
+                        <Text style={globalStyles.header}>{I18t.t('CreateRequest.header')}</Text>
                     </View>
                     <View style={globalStyles.form}>
                         <Formik
@@ -31,17 +31,28 @@ export const CreateRequestScreen = () => {
                             }}>
                             {(props) => (
                                 <View>
-                                    <TextInput style={globalStyles.textinput}
-                                               placeholder={I18t.t('SignUp.zip')}
-                                               value={props.values.zip}
-                                               onChangeText={props.handleChange('zip')}
-                                               onBlur={props.handleBlur('zip')}
+                                    <TextInput style={globalStyles.textInput}
+                                               placeholder={I18t.t('CreateRequest.placeholder')}
+                                               value={props.values.request}
+                                               onChangeText={props.handleChange('request')}
+                                               onBlur={props.handleBlur('request')}
                                                underlineColorAndroid={'transparent'} />
-                                    <Text style={globalStyles.errorText} >{props.touched.zip && props.errors.zip}</Text>
-                                    <FlatButton text={I18t.t('SignUp.button')} onPress={props.handleSubmit} style={globalStyles.actionButtonCenter}/>
+                                    <Text style={globalStyles.errorText} >{props.touched.request && props.errors.request}</Text>
+                                    <CheckBox />
+                                    <View style={globalStyles.buttonContainer}>
+                                        <FlatButton text={I18t.t('CreateRequest.button.cancel')} onPress={() => {
+                                            navigation.navigate('Main');
+                                        }}
+                                                    style={globalStyles.cancelButton} />
+                                        <FlatButton text={I18t.t('CreateRequest.button.ok')}
+                                                    onPress={props.handleSubmit}
+                                                    style={globalStyles.actionButton}/>
+                                    </View>
+
                                 </View>
                             )}
                         </Formik>
+
                     </View>
                 </View>
             </TouchableWithoutFeedback>

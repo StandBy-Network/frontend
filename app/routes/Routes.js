@@ -10,6 +10,7 @@ import {Container} from "../components/Container";
 import ActivityIndicator from "react-native-web/src/exports/ActivityIndicator";
 import {AsyncStorage} from "react-native-web";
 import {AuthContext} from "./AuthProvider";
+import {CreateRequestScreen} from "../screens/assist/myRequests/CreateRequestScreen";
 const Stack = createStackNavigator();
 
 // const Drawer = createDrawerNavigator();
@@ -56,16 +57,14 @@ export const Routes = () => {
             ) : (   */}
                 <Stack.Navigator
                     screenOptions={{
-                        headerTitle:  "SEGÍTSNEKEM - ASSIST",
-                        headerStyle: {
-                            backgroundColor: '#F5F5F5',
-                        },
+                        headerShown: false
                     }}
                 >
                     <Stack.Screen name='SignIn' component={SignInScreen}/>
                     <Stack.Screen name='ForgotPassword' component={ForgotPasswordScreen}/>
                     <Stack.Screen name="PasswordSent" component={PasswordSentScreen} />
                     <Stack.Screen name="Main" component={Main} />
+                    <Stack.Screen name="CreateRequest" component={CreateRequestScreen}/>
                 </Stack.Navigator>
             {/*      )} */}
 

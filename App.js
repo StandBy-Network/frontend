@@ -1,11 +1,12 @@
 import React from 'react';
-import {AssistSavedScreen} from "./app/screens/assist/myAssists/AssistSavedScreen";
+import {ProfileScreen} from "./app/screens/profile/ProfileScreen";
+import {MyContacts} from "./app/screens/contacts/MyContacts";
 
 
 export default function App() {
 
     return (
-            <AssistSavedScreen/>
+            <MyContacts/>
     );
 
 }

@@ -1,5 +1,6 @@
 {
     "SignIn": {
+        "containerHeader": "HELP ME - ASSIST",
         "header": "Sign in",
         "username": "Username",
         "usernameError": "Username is not valid!",
@@ -11,19 +12,24 @@
         }
     },
     "ForgotPassword": {
-        "title": "FORGOTTEN PASSWORD",
+        "containerHeader": "HELP ME - ASSIST",
+        "header": "Forgotten password",
+        "title": "Email used at sign up",
+        "label": "Please, use the email address you signed up with",
         "email": "E-mail address",
-        "emailError": "E-mail address is not valid!",
+        "emailError": "E-mail address is not valid! Please, write again!",
         "button": {
             "go": "Send",
             "cancel": "Cancel"
         }
     },
     "PasswordSent": {
+        "header":"Forgotten password - sent",
         "text": "Password reminder sent",
         "button": "OK"
     },
     "SignUp": {
+        "containerHeader": "HELP ME - ASSIST",
         "title":"Sign up",
         "name": "Username",
         "nameError": "Username can't be empty!",
@@ -43,6 +49,7 @@
         "text": "You can use it in some seconds... :)"
     },
     "ProfileSaved": {
+        "title": "MY PROFILE",
         "text": "Profile Saved",
         "button": "Ok"
     },
@@ -55,16 +62,57 @@
         "button": "OK"
     },
     "CreateRequest": {
+        "menuTitle": "HELP REQUEST",
         "header": "Help request description",
         "placeholder": "Ide írhatjuk le, hogy mit szeretnénk: - gyógszer - bevásárlás (jöhet a teljes lista) - kutyasétáltatás - beszélgetés",
+        "requestError": "Ne hagyja üresen!",
         "tick": "Nyilvános - mindenki segíthet (nem csak az ismerősök)",
         "button": {
-            "cancel": "Mégse",
-            "ok": "Mehet"
+            "cancel": "Cancel",
+            "ok": "OK"
         },
         "edit": {
             "label": "Ismerős, rokon választása, akitől a segítséget kérjük.",
             "placeholder": "Válasszuk ki az ismerőst, rokont"
         }
+    },
+    "Main": {
+        "containerHeader": "HELP ME-ASSIST",
+        "helpRequest": "Segítségkérés",
+        "myHelpRequests": "Eddigi segítségkéréseim",
+        "wantToHelp": "Segíteni szeretnék",
+        "messages": "Üzenetek és események",
+        "contacts": "Kapcsolataim",
+        "profile": "Profilom",
+        "logout": "Kijelentkezés"
+    },
+    "Profile": {
+        "containerHeader": "MY PROFILE",
+        "surname": "Vezetéknév",
+        "surnameError": "Vezetéknév megadása kötelező!",
+        "name": "Keresztnév",
+        "nameError": "Keresztnév megadása kötelező!",
+        "contact": "Kapcsolat",
+        "email": "E-mail cím",
+        "emailValid": "Nem megfelelő jelszó, kérjük ismét!",
+        "emailError": "E-mail cím megadása kötelező!",
+        "phone": "Telefonszám",
+        "mobile": "Mobilszám",
+        "mobileError": "Mobilszám megadása kötelező!",
+        "password": "Jelszó",
+        "passwordError": "Nem megfelelő jelszó. Kérjük ismét!",
+        "currentPassword": "Jelenlegi jelszó",
+        "newPassword": "Új jelszó",
+        "newPasswordAgain": "Új jelszó ismét",
+        "newPasswordError": "A beírt jelszavak nem egyeznek",
+        "notifications": "Figyelmeztetések",
+        "messages": "Messages",
+        "button": {
+            "cancel": "Mégse",
+            "ok": "Mehet"
+        }
+    },
+    "MyContacts": {
+        "containerHeader": "MY CONTACTS"
     }
 }

@@ -1,6 +1,7 @@
 {
   "SignIn": {
-    "header": "BEJELENTKEZÉS",
+    "containerHeader": "SEGÍTSNEKEM - ASSIST",
+    "header": "Bejelentkezés",
     "username": "Felhasználó név",
     "usernameError": "Nem megfelelő felhasználónév!",
     "password": "Jelszó",
@@ -11,19 +12,24 @@
     }
   },
   "ForgotPassword": {
-    "title": "ELFELEJTETT JELSZÓ",
+    "containerHeader": "SEGÍTSNEKEM - ASSIST",
+    "header": "Elfelejtett jelsző",
+    "title": "Regisztrációs e-mail cím",
+    "label": "Kérjük azt az emailcímet, amivel eredetileg regisztráltál",
     "email": "E-mail cím",
-    "emailError": "Nem megfelelő e-mail cím!",
+    "emailError": "Nem megfelelő e-mail cím, kérjük ismét!",
     "button": {
       "go": "Mehet",
       "cancel": "Mégse"
     }
   },
   "PasswordSent": {
+    "header":"Elfelejtett jelszó - elküldve",
     "text": "Jelszóemlékeztető elküldve",
     "button": "Rendben"
   },
   "SignUp": {
+    "containerHeader": "SEGÍTSNEKEM - ASSIST",
     "title":"REGISZTRÁCIÓ, FELIRATKOZÁS",
     "name": "Felhasználónév",
     "nameError": "Név megadása kötelező!",
@@ -43,6 +49,7 @@
     "text": "Másodperceken belül használhatod... :)"
   },
   "ProfileSaved": {
+    "title": "PROFILOM",
     "text": "Profil adatok mentése megtörtént",
     "button": "Rendben"
   },
@@ -55,8 +62,10 @@
     "button": "Rendben"
   },
   "CreateRequest": {
+    "menuTitle": "SEGÍTSÉGKÉRÉS",
     "header": "Segítségkérés leírása",
     "placeholder": "Ide írhatjuk le, hogy mit szeretnénk: - gyógszer - bevásárlás (jöhet a teljes lista) - kutyasétáltatás - beszélgetés",
+    "requestError": "Ne hagyja üresen!",
     "tick": "Nyilvános - mindenki segíthet (nem csak az ismerősök)",
     "button": {
       "cancel": "Mégse",
@@ -66,5 +75,45 @@
       "label": "Ismerős, rokon választása, akitől a segítséget kérjük.",
       "placeholder": "Válasszuk ki az ismerőst, rokont"
     }
+  },
+  "Main": {
+    "containerHeader": "SEGÍTSNEKEM-ASSIST",
+    "helpRequest": "Segítségkérés",
+    "myHelpRequests": "Eddigi segítségkéréseim",
+    "wantToHelp": "Segíteni szeretnék",
+    "messages": "Üzenetek és események",
+    "contacts": "Kapcsolataim",
+    "profile": "Profilom",
+    "logout": "Kijelentkezés"
+  },
+
+  "Profile": {
+    "containerHeader": "PROFILOM",
+    "surname": "Vezetéknév",
+    "surnameError": "Vezetéknév megadása kötelező!",
+    "name": "Keresztnév",
+    "nameError": "Keresztnév megadása kötelező!",
+    "contact": "Kapcsolat",
+    "email": "E-mail cím",
+    "emailValid": "Nem megfelelő jelszó, kérjük ismét!",
+    "emailError": "E-mail cím megadása kötelező!",
+    "phone": "Telefonszám",
+    "mobile": "Mobilszám",
+    "mobileError": "Mobilszám megadása kötelező!",
+    "password": "Jelszó",
+    "passwordError": "Nem megfelelő jelszó. Kérjük ismét!",
+    "currentPassword": "Jelenlegi jelszó",
+    "newPassword": "Új jelszó",
+    "newPasswordAgain": "Új jelszó ismét",
+    "newPasswordError": "A beírt jelszavak nem egyeznek",
+    "notifications": "Figyelmeztetések",
+    "messages": "Messages",
+    "button": {
+      "cancel": "Mégse",
+      "ok": "Mehet"
+    }
+  },
+  "MyContacts": {
+    "containerHeader": "KAPCSOLATAIM"
   }
 }

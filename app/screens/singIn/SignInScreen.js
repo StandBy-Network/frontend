@@ -8,23 +8,29 @@ import {Container} from "../../components/Container";
 import TextLink from "../../components/TextLink";
 import {AuthContext} from "../../routes/AuthProvider";
 import I18t from '../../translations';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const loginSchema = yup.object({
     name: yup.string()
-        .required(I18t.t('SignIn.usernameError')),
+        .required(<View style={globalStyles.errorContainer}>
+            <Text>{I18t.t('SignIn.usernameError')}</Text>
+            <Icon name="warning" style={globalStyles.errorIcon} />
+        </View>),
     password: yup.string()
-        .required(I18t.t('SignIn.passwordError'))
-
+        .required(<View style={globalStyles.errorContainer}>
+            <Text>{I18t.t('SignIn.passwordError')}</Text>
+            <Icon name="warning" style={globalStyles.errorIcon} />
+        </View>),
 });
 
 export default function SignInScreen({ navigation }) {
     const {login} = useContext(AuthContext);
     return (
-        <Container>
+        <Container title={I18t.t('SignIn.containerHeader')}>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-                <View>
+                <View style={globalStyles.content}>
                     <View>
-                        <Text style={globalStyles.header}>{I18t.t('SignIn.header')}</Text>
+                        <Text style={globalStyles.header}>{I18t.t('SignIn.header').toUpperCase()}</Text>
                     </View>
                     <View style={globalStyles.form}>
                         <Formik
@@ -36,31 +42,37 @@ export default function SignInScreen({ navigation }) {
                             }}>
                             {(props) => (
                                 <View>
-                                    <TextInput style={globalStyles.textinput}
-                                               placeholder={I18t.t('SignIn.username')}
+                                    <Text style={globalStyles.redTitle}>{I18t.t('SignIn.header')}</Text>
+                                    <Text style={globalStyles.label}>{I18t.t('SignIn.username')}</Text>
+                                    <TextInput style={globalStyles.textInputRed}
+                                               placeholder="**************"
                                                value={props.values.name}
                                                onChangeText={props.handleChange('name')}
                                                onBlur={props.handleBlur('name')}
                                                underlineColorAndroid={'transparent'} />
                                     <Text style={globalStyles.errorText} >{props.touched.name && props.errors.name}</Text>
-                                    <TextInput style={globalStyles.textinput}
-                                               placeholder={I18t.t('SignIn.password')}
+                                    <Text style={globalStyles.label}>{I18t.t('SignIn.password')}</Text>
+                                    <TextInput style={globalStyles.textInputRed}
+                                               placeholder="**************"
                                                value={props.values.password}
+                                               secureTextEntry={true}
                                                onChangeText={props.handleChange('password')}
                                                onBlur={props.handleBlur('password')}
                                                underlineColorAndroid={'transparent'} />
                                     <Text style={globalStyles.errorText} >{props.touched.password && props.errors.password}</Text>
-                                    <FlatButton text={I18t.t('SignIn.button.signIn')} onPress={() => {
-                                      //  props.handleSubmit;
-                                        login();
-                                      //  navigation.navigate("Main")
-                                    }} style={globalStyles.actionButtonCenter}/>
-                                    <TextLink text={I18t.t('SignIn.button.forgottenPassword')} onPress={() => {
-                                        navigation.navigate("ForgotPassword")
-                                    }} style={globalStyles.reversButtonCenter}/>
                                 </View>
                             )}
                         </Formik>
+                    </View>
+                    <View style={globalStyles.centerButtonContainer}>
+                        <FlatButton text={I18t.t('SignIn.button.signIn')} onPress={() => {
+                            //  props.handleSubmit;
+                            login();
+                            //  navigation.navigate("Main")
+                        }} style={globalStyles.actionButtonCenter}/>
+                        <TextLink text={I18t.t('SignIn.button.forgottenPassword')} onPress={() => {
+                            navigation.navigate("ForgotPassword")
+                        }} style={globalStyles.textLinkCenter}/>
                     </View>
                 </View>
             </TouchableWithoutFeedback>

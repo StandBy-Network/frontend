@@ -2,14 +2,13 @@ import React from 'react';
 import {Container} from "./Container";
 import {globalStyles} from "../styles/globalStyles";
 import {Text, View} from "react-native";
-import I18t from "../translations";
 import FlatButton from "./Button";
 
 
-export const SuccessScreenComponent = ({successText, buttonText}) => {
+export const SuccessScreenComponent = ({containerTitle, successText, buttonText}) => {
 
     return (
-        <Container>
+        <Container title={containerTitle}>
             <View style={globalStyles.screen}>
                 <Text style={globalStyles.pwText}>{successText}</Text>
                 <View>
