@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet} from "react-native";
+import TextAvatar from "react-native-text-avatar";
 
 export const globalStyles = StyleSheet.create({
     actionButton: {
@@ -21,6 +22,23 @@ export const globalStyles = StyleSheet.create({
         padding: '1.25rem',
         width: '10rem',
         backgroundColor: '#D50000',
+    },
+    avatarContacts: {
+        flex: 5,
+        width: '100%',
+    },
+    avatarContactsContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#fafafa',
+        marginBottom: '0.25rem',
+        padding: '0.625rem'
+    },
+    contactsText: {
+        padding: '0.875rem',
+        fontSize: '1.125rem',
+        height: '3.125rem',
     },
     buttonContainer: {
         flex: 1,
@@ -74,6 +92,16 @@ export const globalStyles = StyleSheet.create({
         paddingRight: '0.75rem',
         color: "#717171"
     },
+    contactsContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        width: '100%'
+    },
+    contactsIcon: {
+        fontSize: '1.45rem',
+        padding: '1rem',
+        marginTop: '0.5rem'
+    },
     containerHeaderText: {
         fontSize: '1.375rem',
         paddingLeft: '0.625rem'
@@ -114,6 +142,10 @@ export const globalStyles = StyleSheet.create({
         marginBottom: '2.5rem',
         flex: 1,
         height: '100%'
+    },
+    initials: {
+        flex:1,
+        width: '100%'
     },
     label: {
         color: "#979797",

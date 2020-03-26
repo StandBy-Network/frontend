@@ -10,6 +10,7 @@ import {AuthContext} from "../../routes/AuthProvider";
 import I18t from '../../translations';
 import Icon from "react-native-vector-icons/FontAwesome";
 
+
 const loginSchema = yup.object({
     name: yup.string()
         .required(<View style={globalStyles.errorContainer}>
