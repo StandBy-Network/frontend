@@ -52,12 +52,12 @@ export const Main = () => {
                 <FlatList
                     data={menuItems}
                     renderItem={({item}) =>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={ (item) => getListViewItem(item)}>
                             <View style={globalStyles.menuItemContainer}>
                                 <View style={globalStyles.menuItemInfo}>
                                     {item.icon}
                                     <Text style={globalStyles.menuItem}
-                                          onPress={ (item) => getListViewItem(item)}>{item.text}</Text>
+                                          >{item.text}</Text>
                                 </View>
                                 {
                                     item.text !== I18t.t('Main.logout') &&

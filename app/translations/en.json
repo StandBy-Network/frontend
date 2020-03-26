@@ -114,5 +114,21 @@
     },
     "MyContacts": {
         "containerHeader": "MY CONTACTS"
+    },
+    "MyRequests": {
+        "containerHeader": "My help requests",
+        "status": {
+            "new": "NEW",
+            "on": "ON",
+            "ok": "OK"
+        }
+    },
+    "RequestListScreen": {
+        "containerHeader": "Help requests nearby",
+        "status": {
+            "new": "NEW",
+            "on": "ON",
+            "ok": "OK"
+        }
     }
 }

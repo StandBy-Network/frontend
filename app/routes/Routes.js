@@ -10,7 +10,7 @@ import {Container} from "../components/Container";
 import ActivityIndicator from "react-native-web/src/exports/ActivityIndicator";
 import {AsyncStorage} from "react-native-web";
 import {AuthContext} from "./AuthProvider";
-import {CreateRequestScreen} from "../screens/assist/myRequests/CreateRequestScreen";
+import {CreateRequestScreen} from "../screens/assist/request/CreateRequestScreen";
 const Stack = createStackNavigator();
 
 // const Drawer = createDrawerNavigator();

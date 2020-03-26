@@ -80,7 +80,18 @@ export const globalStyles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "#F5F5F5",
         paddingTop: '0.5rem',
-        paddingBottom: '0.5rem'
+        paddingBottom: '0.5rem',
+        borderWidth: 1,
+        borderRadius: 2,
+        borderColor: '#ddd',
+        borderBottomWidth: 0,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.8,
+        shadowRadius: 8,
+        elevation: 4,
+        marginLeft: '0.05rem',
+        marginBottom: '1rem',
     },
     containerTouchable: {
         flex: 1,
@@ -163,7 +174,7 @@ export const globalStyles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#fff',
         marginBottom: '0.25rem',
-        padding: '0.625rem'
+        padding: '0.625rem',
     },
     menuItemIcon: {
         color: "#979797",
@@ -178,7 +189,8 @@ export const globalStyles = StyleSheet.create({
         fontSize: '1.45rem'
     },
     menuItemIconBlack: {
-        fontSize: '1.45rem'
+        fontSize: '1.45rem',
+        marginLeft: '0.5rem'
     },
     menuItemInfo: {
         flex: 1,
@@ -201,6 +213,37 @@ export const globalStyles = StyleSheet.create({
         fontSize: '1rem',
         marginBottom: '1.275rem',
         marginTop: '1rem',
+    },
+    requestDate: {
+        color: '#D50000',
+        fontSize: '1.25rem',
+        marginBottom: '0.25rem'
+    },
+    requestContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        marginBottom: '1rem',
+        marginLeft: '0.1rem',
+        marginRight: '0.1rem',
+        padding: '0.625rem',
+        borderRadius: 2,
+        borderColor: '#ddd',
+        borderBottomWidth: 0,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.30,
+        shadowRadius: 8,
+        elevation: 8,
+    },
+    requestText: {
+        color: '#A5A5A5'
+    },
+    requestListInfo: {
+        flex: 1,
+        alignItems: 'space-between',
+        justifyContent: 'space-between'
     },
     textLinkCenter: {
         color: '#D50000',

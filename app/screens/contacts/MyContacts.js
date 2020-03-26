@@ -75,7 +75,7 @@ export const MyContacts = () => {
                 <FlatList
                     data={myContacts}
                     renderItem={({item}) =>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={ (item) => getListViewItem(item)}>
                             <View style={globalStyles.avatarContactsContainer}>
                                 <View style={globalStyles.menuItemInfo}>
                                     <TextAvatar
@@ -84,8 +84,7 @@ export const MyContacts = () => {
                                         size={60}
                                         type={'circle'}
                                     >{item.name}</TextAvatar>
-                                    <Text style={globalStyles.contactsText}
-                                          onPress={ (item) => getListViewItem(item)}>{item.name}</Text>
+                                    <Text style={globalStyles.contactsText}>{item.name}</Text>
                                 </View>
                             </View>
                         </TouchableOpacity>

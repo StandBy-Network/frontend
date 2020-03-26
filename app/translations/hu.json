@@ -24,13 +24,13 @@
     }
   },
   "PasswordSent": {
-    "header":"Elfelejtett jelszó - elküldve",
+    "header": "Elfelejtett jelszó - elküldve",
     "text": "Jelszóemlékeztető elküldve",
     "button": "Rendben"
   },
   "SignUp": {
     "containerHeader": "SEGÍTSNEKEM - ASSIST",
-    "title":"REGISZTRÁCIÓ, FELIRATKOZÁS",
+    "title": "REGISZTRÁCIÓ, FELIRATKOZÁS",
     "name": "Felhasználónév",
     "nameError": "Név megadása kötelező!",
     "email": "E-mail cím",
@@ -86,7 +86,6 @@
     "profile": "Profilom",
     "logout": "Kijelentkezés"
   },
-
   "Profile": {
     "containerHeader": "PROFILOM",
     "surname": "Vezetéknév",
@@ -115,5 +114,21 @@
   },
   "MyContacts": {
     "containerHeader": "KAPCSOLATAIM"
+  },
+  "MyRequests": {
+    "containerHeader": "Segítségkéréseim",
+    "status": {
+      "new": "ÚJ",
+      "on": "MEGY",
+      "ok": "OK"
+    }
+  },
+  "RequestListScreen": {
+    "containerHeader": "Segítségkérések a közelben",
+    "status": {
+      "new": "ÚJ",
+      "on": "MEGY",
+      "ok": "OK"
+    }
   }
 }
